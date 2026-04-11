@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram MTProxy & Chats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1.01-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.73 7.57-3.26 3.61-1.5 4.35-1.76 4.84-1.77.11 0 .35.03.5.16.14.12.18.28.19.39.01.07.01.21 0 .33z" />
+                </svg>
+            </div>
+            <h1>Наш Telegram</h1>
+            <p class="description">Лучшие рабочие чаты сообщества.Только целевые заявки.Без спама ,кидал и прочей
+                нечисти.</p>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">Полезные чаты</h2>
+            <ul class="links-list">
+                <li>
+                    <a href="https://t.me/theGreenChatNetwork" class="link-item">
+                        <i>💬</i> Главный чат сообщества
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/example_channel" class="link-item">
+                        <i>📢</i> Официальные новости
+                    </a>
+                </li>
+                <li>
+                    <a href="https://t.me/example_support" class="link-item">
+                        <i>🛠</i> Техническая поддержка
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Бесплатный MTProxy</h2>
+            <div class="proxy-card">
+                <p style="font-size: 14px; color: var(--text-secondary);">Используйте этот прокси, если Telegram
+                    работает нестабильно.</p>
+                <div class="proxy-url-container">
+                    <span class="proxy-url"
+                        id="proxyUrl">tg://proxy?server=server.example.com&port=443&secret=dd00112233445566778899aabbccddeeff</span>
+                    <button class="btn-copy" onclick="copyProxy()">Копия</button>
+                </div>
+                <a href="tg://proxy?server=server.example.com&port=443&secret=dd00112233445566778899aabbccddeeff"
+                    class="btn-connect">
+                    Подключить прокси
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Как настроить?</h2>
+            <div class="instructions">
+                <img src="assets/tg_proxy_instruction.png" alt="Инструкция по настройке">
+                <div class="step">
+                    <span class="step-num">1</span>
+                    <p>Нажмите синюю кнопку «Подключить прокси» выше.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">2</span>
+                    <p>В открывшемся окне Telegram нажмите «Включить».</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">3</span>
+                    <p>Готово! Прокси работает в фоновом режиме.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            &copy; 2026 Наше Сообщество. Все права защищены.
+        </footer>
+    </div>
+
+    <div id="copyToast" class="toast">Ссылка скопирована!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
