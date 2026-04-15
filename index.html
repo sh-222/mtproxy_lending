@@ -18,26 +18,21 @@
                 </svg>
             </div>
             <h1>Наш Telegram</h1>
-            <p class="description">Лучшие рабочие чаты сообщества.Только целевые заявки.Без спама ,кидал и прочей
+            <p class="description">Лучшие рабочие чаты сообщества. Только целевые заявки. Без спама, кидал и прочей
                 нечисти.</p>
         </header>
 
         <section class="section">
-            <h2 class="section-title">Полезные чаты</h2>
+            <h2 class="section-title">Ссылки и инструкции</h2>
             <ul class="links-list">
                 <li>
                     <a href="https://t.me/theGreenChatNetwork" class="link-item">
-                        <i>💬</i> Главный чат сообщества
+                        <i>💬</i> Все чаты сообщества
                     </a>
                 </li>
                 <li>
-                    <a href="https://t.me/example_channel" class="link-item">
-                        <i>📢</i> Официальные новости
-                    </a>
-                </li>
-                <li>
-                    <a href="https://t.me/example_support" class="link-item">
-                        <i>🛠</i> Техническая поддержка
+                    <a href="#setup-guide" class="link-item">
+                        <i>🛠</i> Если нет доступа к Telegram
                     </a>
                 </li>
             </ul>
@@ -60,27 +55,65 @@
             </div>
         </section>
 
-        <section class="section">
-            <h2 class="section-title">Как настроить?</h2>
+        <section class="section" id="setup-guide">
+            <h2 class="section-title">Как найти настройки прокси?</h2>
             <div class="instructions">
-                <img src="assets/tg_proxy_instruction.png" alt="Инструкция по настройке">
-                <div class="step">
-                    <span class="step-num">1</span>
-                    <p>Нажмите синюю кнопку «Подключить прокси» выше.</p>
+                <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">
+                    Если вам нужно проверить статус или изменить настройки позже, воспользуйтесь одним из способов ниже.
+                </p>
+
+                <div class="alert-banner">
+                    <span class="alert-title">Обязательно !!!</span>
+                    <span class="alert-text">Обновите клиент Telegram до последней версии (не ниже v12.6.4).</span>
                 </div>
-                <div class="step">
-                    <span class="step-num">2</span>
-                    <p>В открывшемся окне Telegram нажмите «Включить».</p>
-                </div>
-                <div class="step">
-                    <span class="step-num">3</span>
-                    <p>Готово! Прокси работает в фоновом режиме.</p>
+
+                <div class="methods-container">
+                    <!-- Method 1 -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <span class="step-num">1</span>
+                            <span class="method-title">Быстрый доступ из меню</span>
+                        </div>
+                        <div class="method-image-wrapper">
+                            <img src="assets/photo_2026-04-15_15-04-09.jpg" alt="Прокси в меню">
+                        </div>
+                        <p class="step" style="margin-top: 10px;">Нажмите на <span class="highlight-blue">три точки</span> в верхнем правом углу экрана и выберите пункт «Прокси» с иконкой щита.</p>
+                    </div>
+
+                    <!-- Method 2 -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <span class="step-num">2</span>
+                            <span class="method-title">Через основные настройки</span>
+                        </div>
+                        <div class="method-image-wrapper">
+                            <img src="assets/photo_2026-04-15_15-03-57.jpg" alt="Настройки Telegram">
+                        </div>
+                        <p class="step" style="margin-top: 10px;">Зайдите в «Настройки» → «Данные и память». В самом низу раздела выберите «Настройки прокси».</p>
+                    </div>
+
+                    <!-- Method 3 -->
+                    <div class="method-card">
+                        <div class="method-header">
+                            <span class="step-num">3</span>
+                            <span class="method-title">Управление прокси</span>
+                        </div>
+                        <div class="method-image-wrapper">
+                            <img src="assets/photo_2026-04-15_16-26-36.jpg" alt="Настройки прокси">
+                        </div>
+                        <div class="method-steps">
+                            <p class="step" style="margin-top: 10px;">Вставьте скопированный прокси и нажмите <span class="highlight-blue">«Включить»</span> вверху экрана. <br> Либо просто нажмите кнопку <span class="highlight-blue">«Подключить прокси»</span> выше — он настроится автоматически.</p>
+                            <span class="important-note">⚠️ Обязательно выбирайте тип прокси MTProto.</span>
+                            <span class="important-note" style="border-left-color: #f56565; color: #c53030; background: #fff5f5;">🚫 Не используйте одновременно с VPN!</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
+
         <footer>
-            &copy; 2026 Наше Сообщество. Все права защищены.
+            &copy; 2026 LoadersClub. Все права защищены.
         </footer>
     </div>
 

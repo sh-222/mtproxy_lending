@@ -30,11 +30,10 @@ function showToast() {
   }, 3000);
 }
 
-// Add simple hover effect sound or haptic feedback logic if needed
 document.querySelectorAll('.link-item, .btn-connect').forEach(item => {
   item.addEventListener('click', () => {
     if (window.navigator && window.navigator.vibrate) {
-      window.navigator.vibrate(10); // Subtle vibration for mobile
+      window.navigator.vibrate(10);
     }
   });
 });
