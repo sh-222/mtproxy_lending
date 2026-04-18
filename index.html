@@ -44,14 +44,12 @@
                 <p style="font-size: 14px; color: var(--text-secondary);">Используйте этот прокси, если Telegram
                     работает нестабильно.</p>
                 <div class="proxy-url-container">
-                    <span class="proxy-url"
-                        id="proxyUrl">tg://proxy?server=2.26.91.195&port=8843&secret=ee406666ff2e35bedf10a4cc62ac4b857176696d656f2e636f6d</span>
+                    <span class="proxy-url" id="proxyUrl">tg://proxy?server=...</span>
                     <button class="btn-copy" onclick="copyProxy()">Копия</button>
                 </div>
-                <a href="tg://proxy?server=2.26.91.195&port=8843&secret=ee406666ff2e35bedf10a4cc62ac4b857176696d656f2e636f6d"
-                    class="btn-connect">
+                <button onclick="connectProxy()" class="btn-connect">
                     Подключить прокси
-                </a>
+                </button>
             </div>
         </section>
 
