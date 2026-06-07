@@ -1,5 +1,5 @@
 // Base64 encoded proxy URL to hide it from simple crawlers
-const encodedProxy = "dGc6Ly9wcm94eT9zZXJ2ZXI9Mi4yNi45MS4xOTUmcG9ydD04ODQzJnNlY3JldD1lZTQwNjY2NmZmMmUzNWJlZGYxMGE0Y2M2MmFjNGI4NTcxNzY2OTZkNjU2ZjJlNjM2ZjZk";
+const encodedProxy = "dGc6Ly9wcm94eT9zZXJ2ZXI9Mi4yNi45MS4xOTUmcG9ydD04NDQzJnNlY3JldD1kZDQwNjY2NmZmMmUzNWJlZGYxMGE0Y2M2MmFjNGI4NTcx";
 
 /**
  * Decodes the proxy URL from Base64
