@@ -40,16 +40,40 @@
 
         <section class="section">
             <h2 class="section-title">Бесплатный MTProxy</h2>
-            <div class="proxy-card">
-                <p style="font-size: 14px; color: var(--text-secondary);">Используйте этот прокси, если Telegram
-                    работает нестабильно.</p>
-                <div class="proxy-url-container">
-                    <span class="proxy-url" id="proxyUrl">tg://proxy?server=...</span>
-                    <button class="btn-copy" onclick="copyProxy()">Копия</button>
+            <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 15px;">
+                Если Telegram работает нестабильно — выберите подходящий прокси.
+            </p>
+
+            <!-- DD Proxy -->
+            <div class="proxy-card" style="border-left: 3px solid #48bb78;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong>🔵 Для всех (Android / iOS / Desktop)</strong>
+                    <span style="font-size: 12px; background: #48bb78; color: #fff; padding: 2px 8px; border-radius: 10px;">рекомендуется</span>
                 </div>
-                <button onclick="connectProxy()" class="btn-connect">
-                    Подключить прокси
-                </button>
+                <p style="font-size: 13px; color: var(--text-secondary); margin: 8px 0;">
+                    Работает на всех устройствах и сетях.
+                </p>
+                <div class="proxy-url-container">
+                    <span class="proxy-url" id="proxyDD">tg://proxy?server=...</span>
+                    <button class="btn-copy" onclick="copyDD()">Копия</button>
+                </div>
+                <button onclick="connectDD()" class="btn-connect">Подключить</button>
+            </div>
+
+            <!-- EE Proxy -->
+            <div class="proxy-card" style="border-left: 3px solid #4299e1; margin-top: 12px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong>⚡ Для iOS (быстрее, если работает)</strong>
+                    <span style="font-size: 12px; background: #4299e1; color: #fff; padding: 2px 8px; border-radius: 10px;">альтернатива</span>
+                </div>
+                <p style="font-size: 13px; color: var(--text-secondary); margin: 8px 0;">
+                    Более высокая скорость на iOS. Если не работает — используйте верхний.
+                </p>
+                <div class="proxy-url-container">
+                    <span class="proxy-url" id="proxyEE">tg://proxy?server=...</span>
+                    <button class="btn-copy" onclick="copyEE()">Копия</button>
+                </div>
+                <button onclick="connectEE()" class="btn-connect">Подключить</button>
             </div>
         </section>
 
